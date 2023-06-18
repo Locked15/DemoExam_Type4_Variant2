@@ -109,7 +109,7 @@ namespace SportApp.Views.Windows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/SportApp;component/views/windows/orderformationwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SportApp;V1.0.0.0;component/views/windows/orderformationwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Windows\OrderFormationWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
