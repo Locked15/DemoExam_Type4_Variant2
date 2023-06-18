@@ -1,0 +1,35 @@
+﻿<Window x:Class="SportApp.Views.Windows.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SportApp"
+        mc:Ignorable="d"
+        Title="Авторизация — ООО 'Спорт'" 
+        Height="300" Width="400"
+        MinHeight="290" MinWidth="380"
+        KeyUp="OnWindowKeyUp">
+
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Логин:" />
+        <TextBox Name="loginInputBox" Grid.Row="1" Grid.Column="1" />
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Пароль:" />
+        <PasswordBox Name="passwordInputBox" Grid.Row="2" Grid.Column="1" />
+
+        <Button Grid.Row="4" Grid.Column="0" Content="Войти" Margin="2.5" Click="OnTryToLogInButtonClick" />
+        <Button Grid.Row="4" Grid.Column="1" Content="Войти как Гость" Margin="2.5" Click="OnContinueAsGuestButtonClick" />
+    </Grid>
+</Window>

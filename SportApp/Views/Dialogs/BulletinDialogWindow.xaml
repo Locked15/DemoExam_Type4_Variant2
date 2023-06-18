@@ -1,0 +1,56 @@
+﻿<Window x:Class="SportApp.Views.Dialogs.BulletinDialogWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SportApp.Views.Dialogs"
+        mc:Ignorable="d"
+        Title="Талон на получение — ООО 'Спорт'" 
+        Height="300" Width="365"
+        ResizeMode="CanMinimize"
+        Loaded="OnWindowLoaded">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition  Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Сведения о заказе" FontSize="18" />
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Дата заказа" />
+        <TextBlock Name="orderDateBox" Grid.Row="1" Grid.Column="1" />
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Номер заказа" />
+        <TextBlock Name="orderIdBox" Grid.Row="2" Grid.Column="1" />
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Состав заказа" />
+        <TextBlock Name="orderProductsBox" Grid.Row="3" Grid.Column="1" />
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Сумма заказа" />
+        <TextBlock Name="orderFinalCostBox" Grid.Row="4" Grid.Column="1" />
+
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Сумма скидки" />
+        <TextBlock Name="orderFinalDiscountBox" Grid.Row="5" Grid.Column="1" />
+
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="Пункт выдачи" />
+        <TextBlock Name="orderPickupPointBox" Grid.Row="6" Grid.Column="1" />
+
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="Код получения" />
+        <TextBlock Name="orderTakeCodeBox" Grid.Row="7" Grid.Column="1" FontSize="18" FontWeight="Bold" />
+
+        <TextBlock Grid.Row="8" Grid.Column="0" Text="Статус заказа" />
+        <TextBlock Name="orderStatusBox" Grid.Row="8" Grid.Column="1" />
+    </Grid>
+</Window>
