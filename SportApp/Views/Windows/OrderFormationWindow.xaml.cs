@@ -33,6 +33,7 @@ namespace SportApp.Views.Windows
             if (!CurrentOrder.OrderProducts.Any())
                 Close();
 
+            // We need to reset ListView source, before set a new one (this is how it works).
             productsInOrderList.SelectedIndex = -1;
             productsInOrderList.ItemsSource = null;
             productsInOrderList.ItemsSource = CurrentOrder.OrderProducts;
